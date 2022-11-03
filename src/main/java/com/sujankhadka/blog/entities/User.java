@@ -1,6 +1,7 @@
 package com.sujankhadka.blog.entities;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotEmpty;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -25,9 +26,9 @@ public class User implements UserDetails {
 	
 	@Column(name = "user_name", nullable = false, length = 100)
 	private String name;
-	
+
 	private String email;
-	
+
 	private String password;
 	
 	private String about;
